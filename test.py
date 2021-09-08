@@ -60,3 +60,4 @@ print(encrypt_text)
 loginResp = requests.post(url1,data={'data':encrypt_text}).content
 print(loginResp.decode('utf-8'))
 print(json.loads(loginResp)['result'])
+
